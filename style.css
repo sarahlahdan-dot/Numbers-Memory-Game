@@ -1,0 +1,125 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 60px 40px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #667eea;
+      margin-bottom: 20px;
+    }
+
+    .emoji {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    .instructions {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .instructions h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .instructions ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .instructions li {
+      padding: 12px 0;
+      font-size: 1.1em;
+      color: #555;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .instructions li:last-child {
+      border-bottom: none;
+    }
+
+    .instructions li::before {
+      content: "✓ ";
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .start-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 18px 60px;
+      font-size: 1.3em;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+      font-weight: bold;
+    }
+
+    .start-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+    }
+
+    .start-btn:active {
+      transform: translateY(-1px);
+    }
+
+    .difficulty {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    input {
+  width: 70px;
+  height: 70px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Remove number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.correct {
+  border: 3px solid green;
+  background: #e8f5e9;
+}
+
+.incorrect {
+  border: 3px solid red;
+  background: #ffebee;
+}
