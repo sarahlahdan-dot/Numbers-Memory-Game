@@ -13,6 +13,9 @@ const inputs = [
 ];
 
 
+startBtn.addEventListener('click', startGame);x 
+
+
 //functions 
 
 function startGame() {
@@ -28,6 +31,36 @@ function startGame() {
   // Generate 3 random numbers (1–50)
   for (let i = 0; i < 3; i++) {
     numbers.push(Math.floor(Math.random() * 50) + 1);
-  }}
+  }
+}
+
+
+    // Show numbers
+  numbers.forEach(num => {
+    const div = document.createElement('div');
+    div.className = 'number-box';
+    div.textContent = num;
+    numbersDisplay.appendChild(div);
+  });
+
+  // Hide numbers after 4 seconds
+  setTimeout(() => {
+    numbersDisplay.innerHTML = '';
+  }, 4000);
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
   
