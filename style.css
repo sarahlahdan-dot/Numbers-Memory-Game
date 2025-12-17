@@ -145,3 +145,35 @@ input::-webkit-inner-spin-button {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   animation: pop 0.4s ease;
 }
+
+.correct {
+  border: 3px solid #4CAF50; /* green */
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.incorrect {
+  border: 3px solid #F44336; /* red */
+  background: #ffebee;
+  color: #c62828;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#result {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+input {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #667eea;
+  transition: all 0.3s ease;
+}
