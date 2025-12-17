@@ -44,5 +44,34 @@ function startGame() {
 }
 
 
+function checkAnswers() {
+  let allCorrect = true;
+
+  numbers.forEach((num, index) => {
+    if (parseInt(inputs[index].value) === num) {
+      inputs[index].classList.add('correct');
+      inputs[index].classList.remove('incorrect');
+    } else {
+      allCorrect = false;
+      inputs[index].classList.add('incorrect');
+      inputs[index].classList.remove('correct');
+    }
+  });
+
+  if (allCorrect) {
+    score++;
+    result.textContent = 'Perfect! All answers are correct!';
+    result.style.color = '#4CAF50'; 
+    inputs.forEach(input => input.classList.add('correct'));
+  } else {
+    result.textContent = 'Incorrect! Try again.';
+    result.style.color = '#F44336'; 
+    inputs.forEach(input => input.classList.add('incorrect'));
+  }
+
+  scoreDiv.textContent = `Score: ${score}`;
+}
+
 
 startBtn.addEventListener('click', startGame);
+checkBtn.addEventListener('click', checkAnswers)
