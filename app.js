@@ -24,12 +24,12 @@ function startGame() {
     input.classList.remove('correct', 'incorrect');
   });
 
-  // Generate 3 random numbers (1–50)
+  
   for (let i = 0; i < 3; i++) {
     numbers.push(Math.floor(Math.random() * 50) + 1);
   }
 
-  // Show numbers
+  
   numbers.forEach(num => {
     const div = document.createElement('div');
     div.className = 'number-box';
@@ -37,7 +37,7 @@ function startGame() {
     numbersDisplay.appendChild(div);
   });
 
-  // Hide numbers in few seconds
+  
   setTimeout(() => {
     numbersDisplay.innerHTML = '';
   }, 3000);
