@@ -83,6 +83,8 @@
       box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
       font-weight: bold;
       margin: 10px;
+      color:rgba(85, 8, 38, 0.364)
+
     }
 
     .start-btn:hover {
